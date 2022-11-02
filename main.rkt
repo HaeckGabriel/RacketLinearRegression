@@ -42,7 +42,7 @@
          (string->number str))
        lst))
 
-;; now take the list, take the first element and make it matrix of Y, and the rest matrix for X
+;; Take the list, take the first element and make it matrix of Y, and the rest matrix for X
 ;;!!! I don't like all the let* conditions... find a better way to do that.. break down into smaller funcs?
 (define (transform-list lst)
   (let* ([y_list (car lst)]                                         ;; get the first row for y
@@ -53,8 +53,8 @@
          [numb_row (length y_list_numb)]                            ;; number rows
          [numb_col (length x_list)]                                 ;; number cols
          [y_mat (list->matrix numb_row 1 y_list_numb)]              ;; builds y mat
-         [x_mat (list->matrix numb_row numb_col x_list_flat_numb)]) ;; build x mat
-    (list y_mat x_mat)))                                            ;; returns as list
+         [x_mat (list->matrix numb_col numb_row x_list_flat_numb)]) ;; build x mat (builds by rows, so take transpose next line)
+    (list y_mat (matrix-transpose x_mat))))                         ;; returns as list
 
 ;; Input a '.csv' file and return the tuple of y and x matrices.
 (define (csv-transform csv_file)
