@@ -9,7 +9,7 @@ The `csv-transform` function reads a csv file as input and returns a list with t
 
 ### Obtain the Coefficients
 The coefficients $\hat{\beta}$ are obtained as follows:
-$$ \bm{\hat{\beta}} = (X \cdot X^\transpose)^{-1} \cdot X^\transpose \cdot Y^\transpose $$
+$$ \hat{\beta} = (X \cdot X^\transpose)^{-1} \cdot X^\transpose \cdot Y^\transpose $$
 
 ### Adjusted Coefficient of Regression
 The adjusted Coefficient of Regression, denoted $R^2_\text{a}$, is defined as
