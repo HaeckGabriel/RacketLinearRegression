@@ -18,12 +18,13 @@ Note that if we consider the univariate case, that is $p = 1$, we recuperate the
 - [ ] Must input one csv file (BY ROW, not cols) 
 
 ## Features
-List of specific things to accomplish:
+What this package accomplishes/wants to accomplish in the future
 - [x] Read user input for csv file
-- [x] Get coefficients
+- [x] Obtain Coefficients
 - [x] Perform Predictions given Coefficients and new data
-- [ ] Confidence Intervals for each coefficient
-- [ ] (?) ANOVA
+- [x] Calcualte $R^2_{\text{a}}$
+- [ ] Get Confidence Intervals for each coefficient
+- [ ] Perform ANOVA
 
 ## To Do
 - [ ] Add scribble file.
