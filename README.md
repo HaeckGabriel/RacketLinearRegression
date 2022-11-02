@@ -9,6 +9,7 @@ The `csv-transform` function reads a csv file as input and returns a list with t
 
 ### Obtain the Coefficients
 The coefficients $\hat{\beta}$ are obtained as follows:
+
 $$ \hat{\beta} = (X \cdot X^T)^{-1} \cdot X^T \cdot Y^T $$
 
 ### Adjusted Coefficient of Regression
