@@ -5,7 +5,7 @@
 
 (require math/matrix csv-reading)
 
-(provide csv-transform coeffs r2_adj)
+(provide csv-transform coeffs predict r2_adj)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
