@@ -9,6 +9,11 @@
 (define deps '("base"
                "math-lib"
                "csv-reading"))
+ 
+ ;; build-dependencies
+(define build-deps '("scribble-lib"
+                     "racket-doc"))
+               
 ;; Documentation               
 (define scribblings
   '(("scribblings/linear-regression.scrbl" ())))
