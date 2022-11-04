@@ -1,6 +1,5 @@
 #lang scribble/manual
 
-@require[scribble-math]
 
 @title{linear-regression}
 
@@ -40,21 +39,14 @@ It returns a list of two matrices: the first matrix is the observations, and the
 
 @subsection{@tt{coeffs}}
 
-This function takes the result from @tt{csv-transform} and calculates the coefficients:
+This function takes the result from @tt{csv-transform} and calculates the regression coefficients, as a column matrix.
 
-@$${\hat{\beta} = (X X^\top)^{-1} X^\top Y^\top.}
-
-It returns the coefficients as a column matrix.
 
 @subsection{@tt{predict}}
 
 This function takes a matrix of coefficients (the result of @tt{coeffs}) and a @tt{vector} of new data, of the correct dimension.
-It simply performs
-@$${\beta_0 + \sum_{i=1}^{p} \beta_i \cdot X_i.}
+It simply returns the predicted value given the coefficients.
 
 @subsection{@tt{r2_adj}}
 
-This function takes coefficients (result of @tt{coeffs}) and data set (result of @tt{csv-transform}) and calculates the @tt{adjusted} coefficient of correlation:
-@$${R^2_{\text{a}} = 1 - \left( \frac{n-1}{n-p} \right) \cdot \frac{ \text{SSE} }{ \text{SSTO} },}
-where @${n} is the number of observations and @${p} the number of regressors.
-Note that in the univariate case, @${p = 1} and we recuperate the well-known formula for @${R^2}.
+This function takes coefficients (result of @tt{coeffs}) and data set (result of @tt{csv-transform}) and calculates the @tt{adjusted} coefficient of correlation.
