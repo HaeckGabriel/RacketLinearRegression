@@ -21,8 +21,6 @@ $$ R^2_\text{a} =  1 - \left( \frac{n-1}{n-p} \right) \cdot \frac{ \text{SSE} }
 
 Note that if we consider the univariate case, that is $p = 1$, we recuperate the well-known $R^2$ formula.
 
-## Stuff to describe more
-- [ ] Must input one csv file (BY ROW, not cols) 
 
 ## Features
 What this package accomplishes/wants to accomplish in the future
@@ -32,6 +30,3 @@ What this package accomplishes/wants to accomplish in the future
 - [x] Calcualte $R^2_{\text{a}}$
 - [ ] Get Confidence Intervals for each coefficient
 - [ ] Perform ANOVA
-
-## To Do
-- [ ] Add scribble file.
