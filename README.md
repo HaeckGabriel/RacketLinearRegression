@@ -3,7 +3,7 @@ This library performs linear regression in base Racket.
 More precisely, it obtains the coefficients of regression, calculates the adjusted coefficient of correlation and lets users predict an outcome given an observation and coefficients.
 This package works for multivariate covariates.
 
-The Racket pacakge can also be viewed [here](https://pkgd.racket-lang.org/pkgn/package/linear-regression).
+The Racket package can also be viewed [here](https://pkgd.racket-lang.org/pkgn/package/linear-regression).
 
 ### Reading a csv file
 The `csv-transform` function reads a csv file as input and returns a list with the first element being the observation values ( $Y$ ) and the second element being the covariates ( $X$ ).
