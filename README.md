@@ -10,7 +10,8 @@
 
 <p align="center">
   <a href="#Reading a csv file">Reading a csv file</a> •
-  <a href="#Basics">Basics</a>
+  <a href="#Basics">Basics</a> •
+  <a href="#Features">Features</a> 
 </p>
 
 This library performs linear regression in base Racket.
