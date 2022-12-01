@@ -1,4 +1,13 @@
-# RacketLinearRegression
+<h1 align="center"> Linear Regression in Racket </h1>
+
+<h4 align="center"> The Linear Regression methodology in Racket. </h4>
+
+<p align="center">
+    <a href="https://github.com/HaeckGabriel/gev-distribution/releases/tag/gev-distribution">
+    <img src="https://img.shields.io/badge/Version-1.0.0-blueviolet?style=for-the-badge&logo=Racket">
+  </a>
+</p>
+
 This library performs linear regression in base Racket.
 More precisely, it obtains the coefficients of regression, calculates the adjusted coefficient of correlation and lets users predict an outcome given an observation and coefficients.
 This package works for multivariate covariates.
